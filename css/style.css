@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* ---------common classes -------*/
+.fill-btn,
+.ghost-btn{
+    background: #f4a42f;
+    display: block;
+    width: auto;
+    padding: 12px 9px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+.fill-btn:hover,
+.fill-btn:focus{
+    background: #d59228;
+    color: #fff;
+}
+.ghost-btn{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #f4a42f;
+}
+.ghost-btn:hover,
+.ghost-btn:focus{
+    background: #d59228;
+    color: #fff;
+}
+
+a, a:hover, a:focus{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+/* -------header----- */
+.navbar{
+    background-color: #000;
+}
+.navbar-brand img{
+    width: 130px;
+}
+.navbar-nav li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav li a:hover,
+.navbar-nav li a:focus{
+    color: #f4a42f;
+}
+.login-cart-block i{
+    color: #fff;
+    cursor: pointer;
+}
+  
+.navbar-collapse form {
+    outline: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  
+  .navbar-collapse form > .textbox {
+    outline: 0;
+    height: 42px;
+    width: 244px;
+    max-width: 100%;
+    line-height: 42px;
+    padding: 0 16px;
+    background-color: #fff;
+    color: #212121;
+    border: 0;
+    float: left;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .navbar-collapse form > .textbox:focus {
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .navbar-collapse form > .button {
+    outline: 0;
+    background: none;
+    background-color: #f4a42f;
+    float: left;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 0;
+    color: #FFF;
+    -webkit-transition: background-color .4s ease;
+    transition: background-color .4s ease;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .navbar-collapse form > .button:hover {
+    background-color: #f19d23;
+  }
+  .cart-icon,
+  .login-icon{
+      position: relative;
+  }
+  .cart-icon .shop_i{
+      cursor: pointer;
+  }
+ .cart-icon .badge{
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    position: absolute;
+    top: -8px;
+    background: #eda31a;
+    border-radius: 50%;
+    text-align: center;
+    right: -8px;
+    color: #fff;
+  }
+  .cart-block,
+  .login-block{
+    background-color: #fff;
+    width: 330px;
+    position: absolute;
+    right: -10px;
+    top: 90px;
+    background: #fff;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 0 2px #aaa;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .login-block{
+    width: 200px;
+    right: -2px;
+  }
+  .cart-block.show,
+  .login-block.show{
+      visibility: visible;
+      opacity: 1;
+      top: 47px;
+  }
+  .cart-block:before,
+  .login-block:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    right: 7px;
+    top: -30px;
+  }
+  .cart-block h3{
+      color: #000;
+      font-size: 18px;
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+      margin-bottom: 10px;
+  }
+  .cart-block span{
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px 5px;
+    overflow: hidden;
+    position: relative;
+    color: red;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .cart-block a{
+    background: #f5f5f5;
+    text-align: center;
+    margin-bottom: 2px;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 12px;
+    padding: 10px 5px;
+  }

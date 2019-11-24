@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="images/brand.png" alt="brand" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classic Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classic Cars Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clasiq Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Merch</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input type="text" class="textbox" placeholder="Search">
+                    <i class="material-icons button">search</i>
+                    <div class="login-cart-block ml-2 d-flex align-items-center">
+                        <span class="login-icon d-flex">
+                            <i class="material-icons user_i mr-2">account_circle</i>
+                            <div class="login-block">
+                                <div class="login-content">
+                                    <a href="#" class="fill-btn mb-3">SELL </a>
+                                    <a href="#" class="ghost-btn"> LOGIN/SIGNUP</a>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="cart-icon d-flex">
+                            <i class="material-icons shop_i">shopping_cart</i>
+                            <span class="badge">0</span>
+                            <div class="cart-block">
+                                <h3>Shopping Bag</h3>
+                                <div class="cart-content">
+                                    <span>No products have been added to your cart.
+                                    </span>
+                                    <a href="#">Continue Shopping</a>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- sub header -->
+    <div class="sub-header">
+        <div class="row">
+            <div class="col-lg-4"> 
+                <a href="#">Minimum 60 Days Car Parts money-back guarantee</a>
+            </div>
+            <div class="col-lg-4 shipping"> 
+                <span>FREE SHIPPING</span>
+                <span> ON THOUSANDS OF PARTS</span>
+            </div>
+            <div class="col-lg-4 shipping"> 
+                <span>Mon-Fri 9am-5pm Pacific </span>
+                <a href="#">
+                    <i class="material-icons call_i mr-2">call</i>
+                    877-202-9124</a>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        // $(document).ready(function(){
+        //     $(".shop_i").click(function(){
+        //     $(".cart-block").toggle(1000);
+        //     });
+        // });
+        $(document).ready(function () {
+            $(".shop_i").click(function () {
+                $(".cart-block").toggleClass("show");
+            });
+        });
+        $(document).ready(function () {
+            $(".user_i").click(function () {
+                $(".login-block").toggleClass("show");
+            });
+        });
+    </script>
+</body>
+
+</html>
