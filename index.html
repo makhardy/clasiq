@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom -->
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
@@ -31,12 +36,96 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Classic Cars</a>
+
+                        <div class="mega-menu" style="top: -10000px;">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="">
+                                        <div class="mega-menu-heading text-center">Buy Classic Car Parts</div>
+                                        <div class="mega-menu-section-wrap">
+                                            <div class="col-md-3">
+                                                <ul class="pl-4">
+                                                    <li><strong>Years</strong></li>
+                                                    <li><a href="#">1990</a></li>
+                                                    <li><a href="#">1980</a></li>
+                                                    <li><a href="#">1970</a></li>
+                                                    <li><a href="#">1960</a></li>
+                                                    <li><a href="#">1950</a></li>
+                                                    <li><a href="#">1940</a></li>
+                                                    <li><a href="#">1930</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul>
+                                                    <li><strong>Car Makes</strong></li>
+                                                    <li><a href="#">Buick</a></li>
+                                                    <li><a href="#">Cadillac</a></li>
+                                                    <li><a href="#">Chevrolet</a></li>
+                                                    <li><a href="#">Dodge</a></li>
+                                                    <li><a href="#">Ford</a></li>
+                                                    <li><a href="#">Pontiac</a></li>
+                                                    <li><a href="#">Oldsmobile</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul>
+                                                    <li><strong>Car Models</strong></li>
+                                                    <li><a href="#">Bel Air</a></li>
+                                                    <li><a href="#">Camaro</a></li>
+                                                    <li><a href="#">Chevelle</a></li>
+                                                    <li><a href="#">Corvette</a></li>
+                                                    <li><a href="#">GTO</a></li>
+                                                    <li><a href="#">Nova</a></li>
+                                                    <li><a href="#">Mustang</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul>
+                                                    <li><strong>Popular Parts</strong></li>
+                                                    <li><a href="#">Air filters</a></li>
+                                                    <li><a href="#">Disc Brake Calipers</a></li>
+                                                    <li><a href="#">Alternators</a></li>
+                                                    <li><a href="#">Windshield Wiper Blades</a></li>
+                                                    <li><a href="#">Accessory Drive Belts</a></li>
+                                                    <li><a href="#">Clutch Kits</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mega-menu-btn-pos-a text-center"
+                                            style="margin-top: 43px;">
+                                            <a class="fill-btn" href="#">View All Parts</a>
+                                            <a class="black-btn fill-btn" href="#">New
+                                                Brands</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mega-menu-heading text-center">Most Popular Parts</div>
+                                    <div id="popular-parts" class="menu-pp owl-carousel owl-theme owl-loaded">
+                                        <div class="owl-item ">
+                                            <div class="item product text-center">
+                                                <div>
+                                                    <div class="fp-img">
+                                                        <img src="#" alt="">
+                                                    </div>
+                                                    <h3 class="name"><a href="javascript:void(0);">Accessory
+                                                            Drive Belts</a></h3>
+                                                    <h4 class="f-price">From: $10.99</h4>
+                                                    <a href="#" title="accessory-drive-belt"
+                                                        class="fill-btn mt-3">View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Classic Cars Parts</a>
@@ -179,114 +268,212 @@
                             <li>categories 8</li>
                             <li>categories 9</li>
                             <li>categories 10</li>
+                            <li>
+                                <a href="#" class="ghost-btn">
+                                    Show All Categories
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="category-list-wrapper">
 
-                    
-                    <div class="category-block">
-                        <h4>categories</h4>
-                        <ul class="category-row">
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-1</span>
-                                </a>
+                        <!-- category-block -->
+                        <div class="category-block">
+                            <h4>categories</h4>
+                            <ul class="category-row">
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 1</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-2.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-2</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-2.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 2</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-3.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-3</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-3.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 3</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-4.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-4</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-4.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 4</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-5.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-5</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-5.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 5</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-6.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-6</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-6.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 6</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-5.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-7</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-5.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 7</span>
+                                    </a>
 
-                            </li>
-                            <li class="catergory-column">
-                                <a href="#">
-                                    <img src="images/car-parts-6.jpg" alt="car-part" class="img-fluid">
-                                    <span>categories-8</span>
-                                </a>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#">
+                                        <img src="images/car-parts-6.jpg" alt="car-part" class="img-fluid">
+                                        <span>categories 8</span>
+                                    </a>
 
-                            </li>
+                                </li>
+                                <li class="catergory-column">
+                                    <a href="#" class="ghost-btn">
+                                        Show All Categories
+                                    </a>
+                                </li>
 
-                        </ul>
-                    </div>
-                    <div class="brand-block">
+                            </ul>
+                        </div>
+                        <!-- brand-block -->
+                        <div class="brand-block">
                             <h4>BRANDS</h4>
                             <ul class="brand-row">
                                 <li class="brand-column">
                                     <a href="#">
-                                        <img src="images/brand-img-1.png" alt="car-part" >
-                                        
+                                        <img src="images/brand-img-1.png" alt="car-part">
+
                                     </a>
-    
+
                                 </li>
                                 <li class="brand-column">
                                     <a href="#">
-                                        <img src="images/brand-img-2.png" alt="car-part" >
-                                        
+                                        <img src="images/brand-img-2.png" alt="car-part">
+
                                     </a>
-    
+
                                 </li>
                                 <li class="brand-column">
                                     <a href="#">
-                                        <img src="images/brand-img-3.png" alt="car-part" >
-                                        
+                                        <img src="images/brand-img-3.png" alt="car-part">
+
                                     </a>
-    
+
                                 </li>
                                 <li class="brand-column">
                                     <a href="#">
-                                        <img src="images/brand-img-4.png" alt="car-part" >
-                                        
+                                        <img src="images/brand-img-4.png" alt="car-part">
+
                                     </a>
-    
+
                                 </li>
                                 <li class="brand-column">
                                     <a href="#">
-                                        <img src="images/brand-img-5.png" alt="car-part" >
-                                        
+                                        <img src="images/brand-img-5.png" alt="car-part">
+
                                     </a>
-    
+
                                 </li>
-                                
-                                
-    
+
+
+
+                            </ul>
+                        </div>
+                        <!-- category-block -->
+                        <div class="product-block">
+                            <h4>PRODUCTS</h4>
+                            <ul class="product-row">
+                                <li class="product-column">
+                                    <a href="#">
+                                        <div class="image-container">
+                                            <img src="images/prod-1.jpg" alt="product-image" class="icon"
+                                                class="img-fluid">
+                                        </div>
+                                        <ul class="product-content">
+                                            <li class="product-name">Coverking®</li>
+                                            <li class="product-des">Mosom Plus Custom Car Covers</li>
+                                            <li class="product-rating filled"></li>
+                                            <li class="price">$119.61</li>
+                                        </ul>
+                                    </a>
+
+                                </li>
+                                <li class="product-column">
+                                    <a href="#">
+                                        <div class="image-container">
+                                            <img src="images/prod-2.jpg" alt="product-image" class="icon"
+                                                class="img-fluid">
+                                        </div>
+                                        <ul class="product-content">
+                                            <li class="product-name">Coverking®</li>
+                                            <li class="product-des">Mosom Plus Custom Car Covers</li>
+                                            <li class="product-rating filled"></li>
+                                            <li class="price">$119.61</li>
+                                        </ul>
+                                    </a>
+
+                                </li>
+                                <li class="product-column">
+                                    <a href="#">
+                                        <div class="image-container">
+                                            <img src="images/prod-3.jpg" alt="product-image" class="icon"
+                                                class="img-fluid">
+                                        </div>
+                                        <ul class="product-content">
+                                            <li class="product-name">Coverking®</li>
+                                            <li class="product-des">Mosom Plus Custom Car Covers</li>
+                                            <li class="product-rating filled"></li>
+                                            <li class="price">$119.61</li>
+                                        </ul>
+                                    </a>
+
+                                </li>
+                                <li class="product-column">
+                                    <a href="#">
+                                        <div class="image-container">
+                                            <img src="images/prod-4.jpg" alt="product-image" class="icon"
+                                                class="img-fluid">
+                                        </div>
+                                        <ul class="product-content">
+                                            <li class="product-name">Coverking®</li>
+                                            <li class="product-des">Mosom Plus Custom Car Covers</li>
+                                            <li class="product-rating"></li>
+                                            <li class="price">$119.61</li>
+                                        </ul>
+                                    </a>
+
+                                </li>
+                                <li class="product-column">
+                                    <a href="#">
+                                        <div class="image-container">
+                                            <img src="images/prod-5.jpg" alt="product-image" class="icon"
+                                                class="img-fluid">
+                                        </div>
+                                        <ul class="product-content">
+                                            <li class="product-name">Coverking®</li>
+                                            <li class="product-des">Mosom Plus Custom Car Covers</li>
+                                            <li class="product-rating"></li>
+                                            <li class="price">$119.61</li>
+                                        </ul>
+                                    </a>
+
+                                </li>
+                                <li class="product-column">
+                                    <a href="#" class="ghost-btn">
+                                        Show All Products
+                                    </a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -295,18 +482,165 @@
         </div>
     </section>
 
+    <section class="article">
+        <div class="owl-carousel">
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="article-section">
+                        <div class="article-image">
+                            <img src="images/article-img-1.jpg" alt="article-img" class="img-fluid">
+                        </div>
+                        <div class="article-content">
+                            <h4>Bob’s Big Boy 49</h4>
+                            <div class="article-desc">
+                                <p>lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="article-date">
+                                <i class="material-icons">
+                                    calendar_today
+                                </i> &nbsp;24 September 2019
+                            </div>
+                            <button class="fill-btn"> Read More </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="js/jquery.min.js">
     </script>
-    <!-- popper js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <!-- bootstrap js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+
+
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
     <script>
         // $(document).ready(function(){
         //     $(".shop_i").click(function(){
@@ -322,6 +656,26 @@
             $(".user_i").click(function () {
                 $(".login-block").toggleClass("show");
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
         });
     </script>
 </body>
