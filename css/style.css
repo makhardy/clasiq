@@ -989,6 +989,7 @@ form>.button:hover {
   .sub-header .row{
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   .sub-header .money-back{
     display: none !important;

@@ -33,7 +33,7 @@
             <div class="moblile-only d-flex align-items-center">
 
                 <form class="form-inline my-2 my-lg-0">
-                    <input id="search" type="text" class="textbox" placeholder="Search">
+                    <input class="search-modal textbox" type="text" placeholder="Search">
                     <i class="material-icons button">search</i>
 
                 </form>
@@ -133,7 +133,7 @@
                     </li>
                 </ul>
                 <form class="form-inline desktop-only my-2 my-lg-0">
-                    <input id="search" type="text" class="textbox" placeholder="Search">
+                    <input class="search-modal textbox" type="text" placeholder="Search">
                     <i class="material-icons button">search</i>
                     <div class="login-cart-block ml-2 d-flex align-items-center">
                         <span class="login-icon d-flex">
@@ -654,7 +654,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#search").click(function () {
+            $(".search-modal").click(function () {
                 $("body").addClass("show-search");
             });
             $(".input-text").click(function () {
