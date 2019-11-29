@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900&display=swap"
         rel="stylesheet">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- material icons -->
@@ -26,26 +26,36 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">
                 <img src="images/brand.png" alt="brand" class="img-fluid">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="moblile-only d-flex align-items-center">
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input id="search" type="text" class="textbox" placeholder="Search">
+                    <i class="material-icons button">search</i>
+
+                </form>
+
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item submenu">
                         <a class="nav-link" href="#">Classic Cars</a>
 
                         <div class="mega-menu" style="top: -10000px;">
                             <div class="row">
-                                <div class="col-md-9">
+                                <div class="col-md-12">
                                     <div class="">
                                         <div class="mega-menu-heading text-center">Buy Classic Car Parts</div>
                                         <div class="mega-menu-section-wrap">
@@ -105,25 +115,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="mega-menu-heading text-center">Most Popular Parts</div>
-                                    <div id="popular-parts" class="menu-pp owl-carousel owl-theme owl-loaded">
-                                        <div class="owl-item ">
-                                            <div class="item product text-center">
-                                                <div>
-                                                    <div class="fp-img">
-                                                        <img src="#" alt="">
-                                                    </div>
-                                                    <h3 class="name"><a href="javascript:void(0);">Accessory
-                                                            Drive Belts</a></h3>
-                                                    <h4 class="f-price">From: $10.99</h4>
-                                                    <a href="#" title="accessory-drive-belt"
-                                                        class="fill-btn mt-3">View All</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </li>
@@ -140,8 +132,8 @@
                         <a class="nav-link" href="#">Merch</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input type="text" class="textbox" placeholder="Search">
+                <form class="form-inline desktop-only my-2 my-lg-0">
+                    <input id="search" type="text" class="textbox" placeholder="Search">
                     <i class="material-icons button">search</i>
                     <div class="login-cart-block ml-2 d-flex align-items-center">
                         <span class="login-icon d-flex">
@@ -166,6 +158,14 @@
                             </div>
                         </span>
                     </div>
+                    <ul class="login-sell-block">
+                        <li>
+                            <a href="#">Login / Sign Up</a>
+                        </li>
+                        <li>
+                                <a href="#">Sell </a>
+                        </li>
+                    </ul>
                 </form>
             </div>
         </nav>
@@ -174,14 +174,14 @@
     <!-- sub header -->
     <div class="sub-header">
         <div class="row">
-            <div class="col-lg-4 money-back d-flex align-items-center justify-content-center">
+            <div class="col-lg-4 col-6 money-back d-flex align-items-center justify-content-center">
                 <a href="#">Minimum 60 Days Car Parts money-back guarantee</a>
             </div>
-            <div class="col-lg-4 shipping d-flex align-items-center justify-content-center">
+            <div class="col-lg-4 col-6 shipping d-flex align-items-center justify-content-center">
                 <span>FREE SHIPPING</span>
                 <span> ON THOUSANDS OF PARTS</span>
             </div>
-            <div class="col-lg-4 call-us d-flex align-items-center justify-content-center">
+            <div class="col-lg-4 col-6 call-us d-flex align-items-center justify-content-center">
                 <span>Mon-Fri 9am-5pm Pacific </span>
                 <a href="#">
                     <i class="material-icons call_i mr-2">call</i>
@@ -194,10 +194,12 @@
     <section class="banner">
         <div class="banner-wrapper d-flex align-items-center">
             <div class="left-section">
-                <a href="#" class="floating-btn fill-btn">
-                    <img src="images/car-icon.png" alt="car-icon" class="img-fluid">
-                    <span>Find Classic Cars</span>
-                </a>
+                <div>
+                    <a href="#" class="floating-btn fill-btn">
+                        <img src="images/car-icon.png" alt="car-icon" class="img-fluid">
+                        <span>Find Classic Cars</span>
+                    </a>
+                </div>
                 <img src="images/banner-image-1.png" alt="banner-image" class="img-fluid">
             </div>
             <div class="right-section">
@@ -252,6 +254,15 @@
             <div class="search-box">
                 <i class="material-icons search_i mr-2">search</i>
                 <input type="text" class="input-text">
+                <i class="material-icons close_i">
+                    close
+                </i>
+            </div>
+            <div class="history-block">
+                <div class="history-content">
+                    <span>History 1</span>
+                    <span>History 2</span>
+                </div>
             </div>
             <div class="search-suggestion">
                 <div class="suggestion-row">
@@ -339,7 +350,7 @@
                                 </li>
                                 <li class="catergory-column">
                                     <a href="#" class="ghost-btn">
-                                        Show All Categories
+                                        Show All
                                     </a>
                                 </li>
 
@@ -498,7 +509,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp;<span>29 Nov 2019</span>
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -519,7 +530,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp; <span>24 September 2019</span> 
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -540,7 +551,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp; <span>24 September 2019</span> 
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -561,7 +572,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp; <span>24 September 2019</span> 
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -582,7 +593,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp; <span>24 September 2019</span> 
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -603,7 +614,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp; <span>24 September 2019</span> 
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -624,7 +635,7 @@
                             <div class="article-date">
                                 <i class="material-icons">
                                     calendar_today
-                                </i> &nbsp;24 September 2019
+                                </i> &nbsp; <span>24 September 2019</span> 
                             </div>
                             <button class="fill-btn"> Read More </button>
                         </div>
@@ -637,16 +648,22 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js">
     </script>
-
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Owl carousel -->
     <script src="js/owl.carousel.min.js"></script>
     <script>
-        // $(document).ready(function(){
-        //     $(".shop_i").click(function(){
-        //     $(".cart-block").toggle(1000);
-        //     });
-        // });
+        $(document).ready(function () {
+            $("#search").click(function () {
+                $("body").addClass("show-search");
+            });
+            $(".input-text").click(function () {
+                $(".history-block").addClass("show-history");
+            });
+            $(".close_i").click(function () {
+                $("body").removeClass("show-search");
+            });
+        });
         $(document).ready(function () {
             $(".shop_i").click(function () {
                 $(".cart-block").toggleClass("show");
@@ -656,6 +673,14 @@
             $(".user_i").click(function () {
                 $(".login-block").toggleClass("show");
             });
+        });
+        $(document).ready(function () {
+            $(".input-text").keypress(function () {
+                $("body").addClass('show-suggestion');
+            });
+            // $(".input-text").blur(function(){
+            //     $("body").removeClass('show-suggestion');
+            // });
         });
     </script>
     <script>
